@@ -66,6 +66,10 @@ CREATE TABLE products (
 );
 
 -- Add default manager
+-- u can hash the password using PasswordHasher.java (this file available in this project)
+--Login user Name - admin , password - 12345678;
+--password must be in 8 character
+--username must be in 5 character 
 INSERT INTO users (name, username, password, role)
 VALUES ('Admin', 'admin', '$2a$10$LxyFaEOIUFZ4V6PLPAKuZ.bUCvmEetukGAivCv5omsVNxEuqOrCWW', 'Manager');
 ```
@@ -94,7 +98,7 @@ private static final String PASSWORD = "your_mysql_password";
 
 3. **Cashier Dashboard**: After logging in as a cashier, you can:
    - Add new products.
-   - View and search products.
+   - View and search products and filterd by category.
 
 4. **Logout**: Click the `Logout` button to safely log out.
 
